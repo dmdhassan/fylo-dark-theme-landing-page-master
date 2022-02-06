@@ -3,7 +3,7 @@ body {
   background: hsl(218, 28%, 13%);
   font-size: 16px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -23,7 +23,7 @@ h1,
 h2,
 h3 {
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 nav {
@@ -55,16 +55,18 @@ nav {
 }
 
 .btn {
-  background: hsl(176, 68%, 64%);
-  color: hsl(0, 0%, 100%);
-  border-radius: 50px;
   border: none;
-  outline: none;
-  width: 80%;
+  border-radius: 50px;
+  background: hsl(198, 60%, 50%);
+  text-decoration: none;
+  width: 250px;
+  padding: 3px;
+  color: hsl(0, 0%, 100%);
 }
 
 .btn:hover {
-  background: hsl(198, 60%, 50%);
+  background: hsl(176, 68%, 64%);
+  text-decoration: none;
 }
 
 .features {
@@ -118,8 +120,8 @@ nav {
 
 .author {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
   width: 75%;
 }
 
@@ -137,23 +139,23 @@ nav {
   border-radius: 10px;
 }
 
-.input-field {
-  padding: 4%;
-  width: 70%;
-  outline: none;
-  border: none;
-  border-radius: 50px;
-}
-
 .cta-btn {
   display: flex;
-  align-items: center;
-  gap: 1rem;
   flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input-field {
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 20px 5px;
+  text-align: center;
+  width: 250px;
 }
 
 .footer {
-  /* width: 100%; */
   text-align: left;
   background: hsl(216, 53%, 9%);
   margin: 0;
@@ -170,6 +172,7 @@ nav {
 .fylo-contact {
   width: 70%;
 }
+
 .contact {
   display: flex;
   align-items: flex-start;
@@ -267,17 +270,12 @@ ion-icon:hover {
   }
 
   .cta-btn {
-    display: flex;
     flex-direction: row;
   }
 
   .input-field {
-    padding: 3%;
-  }
-
-  .cta-btn .btn {
-    width: 30%;
-    padding: 1%;
+    padding: 20px;
+    width: 60%;
   }
 
   .fylo-contact {
